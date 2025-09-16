@@ -354,6 +354,8 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 .products-header--title {
 	color: #000;
@@ -379,6 +381,29 @@ ul {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
+}
+
+.products-wrapper {
+	margin-top: 44px;
+	margin-bottom: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+
+
+.products-card__description-info--group {
+	display: block;
+	position: absolute;
+}
+.products-card__description-info--group::before {
+	position: relative;
+	display: block;
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
 }
 
 
@@ -445,4 +470,106 @@ ul {
   background-color: #ff5618;
   color: white;
 }
+
+
+
+
+
+
+.cart-modal__overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.486);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	display: none !important;
+}
+.cart-modal {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 768px;
+	background-color: #fff;
+	padding: 40px 45px;
+	border-radius: 5px;
+}
+.cart-modal__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 48px;
+}
+
+.cart-modal__title {
+	color: var(--black);
+	font-weight: 700;
+	font-size: 36px;
+}
+.cart-modal__header--close {
+	display: block;
+	width: 26px;
+	height: 26px;
+	border: 1px solid transparent;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.cart-modal__title {
+	font-weight: 700;
+	font-size: 36px;
+	color: var(--black);
+}
+
+.cart-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.cart-item__controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 46px;
+}
+.cart-item__controls--price {
+	display: block;
+	font-weight: 700;
+	font-size: 20px;
+	/* line-height: 160%; */
+	color: var(--gray---gray-10);
+}
+	.cart-item__controls--count {
+	display: block;
+}
+
+.cart-modal__footer {
+	margin-top: 52px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+.cart-modal__footer--price {
+	border-radius: 5px;
+	padding: 15px 20px;
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--gray---gray-2);
+	background-color: var(--black);
+	cursor: pointer;
+}
+.cart-modal__footer--controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
 
