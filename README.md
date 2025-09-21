@@ -1,20 +1,4 @@
-# deliveryfood
-
-Glo Delivery Food intense 13-17sep
-
-## Lesson 5
-
-deadline at 19.09.2025 10:00
-
-<https://github.com/dimfreelancer/deliveryfood/tree/lesson5>
-
-<https://www.figma.com/design/jvdXKoLWJcJOX3nwiSyfCo/Delivery-Food--Copy->
-
-## vue-project-latest2025
-
-initial vue latest create
-
-```npm create vue@latest```
+# vue-project-latest2025
 
 This template should help get you started developing with Vue 3 in Vite.
 
